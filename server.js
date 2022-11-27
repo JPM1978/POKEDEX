@@ -30,7 +30,7 @@ app.get('/pokemon/:id/edit', (req, res) => {
 app.put('/pokemon/:id', (req, res) => {
     const pokemonId = req.params.id;
     console.log('made it here!!')
-    pokemonData[0].name = 'Batman'
+    // pokemonData[0].name = 'Batman'
     res.redirect('/pokemon');
 })
 
