@@ -21,7 +21,17 @@ app.get('/pokemon/:id', (req, res) => {
 
 // EDIT
 app.get('/pokemon/:id/edit', (req, res) => {
-    res.render('edit.ejs');
+    const pokemonId = req.params.id;
+    const selectedPokemon = pokemonData.find(pokemon => pokemon.id == pokemonId);
+    res.render('edit.ejs', {pokemon:selectedPokemon});
+})
+
+// UPDATE ROUTE
+app.put('/pokemon/:id', (req, res) => {
+    const pokemonId = req.params.id;
+    console.log('made it here!!')
+    pokemonData[0].name = 'Batman'
+    res.redirect('/pokemon');
 })
 
 
