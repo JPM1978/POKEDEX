@@ -1,9 +1,8 @@
 body {
     background-color: black;
     text-align: left;
-    text-emphasis-color:
     color: black;
-    background-image: url(https://i.imgur.com/c6KMgN1.png);
+    background-image: url(https://i.imgur.com/eTvKY8K.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -11,10 +10,42 @@ body {
     background-size: 100% 100%;
 }
 
+.description {
+    padding-top: 200px;
+    text-align: center;
+    
+}
 h1 {
     text-align: center;
 }
 
+.heading {
+    text-align: center;
+    position: fixed;
+    right: 650px;
+}
+h2 {
+    padding-top: 0%;
+}
+
 ul {
     list-style-type: none;
+    padding: 0%;
+    
+}
+
+a {
+    color: black;
+}
+
+img {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: aquamarine;
+    border-width: 8px;
+
+}
+
+li {
+    padding-top: 15px;
 }

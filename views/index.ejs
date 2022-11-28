@@ -9,10 +9,11 @@
     <title>My Pokedex</title>
 </head>
 <body>
-    <h1>My Pokedex</h1>
+     <h1 class="heading">My Pokedex</h1>
+    
     <ul>
+        <!-- <h2>Pokemon</h2> -->
         <% for(var i=0; i < pokemon.length; i++) { %>
-            
             <a href="/pokemon/<%= pokemon[i].id  %> ">
                 <li><img src="<%= pokemon[i].img %>" width="100" height="100"/></li>
                 <li> <%= pokemon[i].name  %> </li>
