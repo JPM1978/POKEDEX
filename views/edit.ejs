@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Page</title>
+    
 </head>
 <body>
-    <form action="/pokemon/<%= pokemon.id %>" method="put">
+    <form method="POST" action="/pokemon/<%= pokemon.id %>/?_method=PUT">
         <label>
             NAME:<input
               type="text"
               name="name"
               value="<%= pokemon.name %> "
               placeholder="enter new pokemon name"
+            />
+          </label>
+          <label>
+            HP:<input
+              type="text"
+              name="hp"
+              value="<%= pokemon.stats.hp %> "
+              placeholder="Enter New HP"
             />
           </label>
           <input type="submit" value="Update <%= pokemon.name %>" />
