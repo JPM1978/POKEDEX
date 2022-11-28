@@ -25,6 +25,22 @@
               placeholder="Enter New HP"
             />
           </label>
+          <label>
+            ATTACK:<input
+              type="text"
+              name="attack"
+              value="<%= pokemon.stats.attack %> "
+              placeholder="Enter New Attack"
+            />
+          </label>
+          <label>
+            DEFENSE:<input
+              type="text"
+              name="defense"
+              value="<%= pokemon.stats.defense %> "
+              placeholder="Enter New Defense"
+            />
+          </label>
           <input type="submit" value="Update <%= pokemon.name %>" />
           <a href="/pokemon/"><button>Back</button></a>
     </form>
