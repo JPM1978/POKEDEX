@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Page</title>
-    <style>
+  <style>
     body{
     background-image: url(https://i.imgur.com/RV3GYfk.jpg);
     background-color: black;
@@ -20,7 +20,6 @@
     }
 
     .lowerB {
-        /* text-align: center; */
         border-radius: 50%;
         border-style: solid;
         border-color: aquamarine;
@@ -29,22 +28,34 @@
         left: 371px;
         bottom: 110px;
         width: 12%;  
-        height: 21%;   
-        
+        height: 21%;          
     }
-    
-    .tab1 {
-      tab-size: 4;
+    .lowerC {
+        border-radius: 50%;
+        border-style: solid;
+        /* border-color: aquamarine; */
+        border-width: 8px;
+        position:absolute;
+        left: 700px;
+        bottom: 50px;
+        width: 30%;  
+        height: auto;  
     }
 
+    p {
+      text-align: right;
+    }
 
-    </style>
+    .tabber {
+      inset: 10%;
+    }
+  </style>
     
 </head>
 <body>
     <form method="POST" action="/pokemon/<%= pokemon.id %>/?_method=PUT">
         <label>
-           <p> NAME: <input
+            <p>NAME: <input
               type="text"
               name="name"
               value="<%= pokemon.name %> "
@@ -52,7 +63,7 @@
             /> </p>
           </label>
           <label>
-          <p class="tab1"> HP: <input
+            <p class="taber">HP: <input
               type="text"
               name="hp"
               value="<%= pokemon.stats.hp %> "
@@ -76,8 +87,17 @@
             />
           </label>
           <p><input type="submit" value="Update <%= pokemon.name %>" />
-          <a href="/pokemon/:id"><button>Back</button></a></p>
+          <a href="/pokemon/:id/"><button>Back</button></a></p>
     </form>
     <img class="lowerB" src="<%= pokemon.img %>" width="100" height="100"/> 
+    <img class="lowerC" src="<%= pokemon.img %>" width="100" height="100"/> 
+    <img class="lowerD" src="<%= pokemon.img %>" width="100" height="100"/> 
+    <img class="lowerE" src="<%= pokemon.img %>" width="100" height="100"/> 
+    <img class="lowerF" src="<%= pokemon.img %>" width="100" height="100"/> 
+    <img class="lowerF" src="<%= pokemon.img %>" width="100" height="100"/> 
+    <img class="lowerF" src="<%= pokemon.img %>" width="100" height="100"/> 
+    <img class="lowerF" src="<%= pokemon.img %>" width="100" height="100"/> 
+    <img class="lowerF" src="<%= pokemon.img %>" width="100" height="100"/> 
+    <img class="lowerF" src="<%= pokemon.img %>" width="100" height="100"/> 
 </body>
 </html>
