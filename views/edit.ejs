@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Page</title>
     <style>
-          body{
+    body{
     background-image: url(https://i.imgur.com/RV3GYfk.jpg);
     background-color: black;
     text-align: center;
@@ -32,6 +32,12 @@
         height: 21%;   
         
     }
+    
+    .tab1 {
+      tab-size: 4;
+    }
+
+
     </style>
     
 </head>
@@ -46,7 +52,7 @@
             /> </p>
           </label>
           <label>
-          <p> HP: <input
+          <p class="tab1"> HP: <input
               type="text"
               name="hp"
               value="<%= pokemon.stats.hp %> "

@@ -17,7 +17,7 @@ app.get('/pokemon', (req, res) => {
     res.render('index.ejs', {pokemon: pokemonData});
     });
 
-    
+
 // DELETE ROUTE
 app.delete("/pokemon/:id", (req, res) => {
     // get the id from params
@@ -59,6 +59,14 @@ app.put('/pokemon/:id', (req, res) => {
     pokemonData[pokemonIndex].stats.defense = req.body.defense;
     res.redirect('/pokemon');
 })
+
+
+// DELETE ROUTE
+
+
+
+
+
 
 // Listener
 app.listen(PORT, () => console.log(`express is listening on port: ${PORT}`));
