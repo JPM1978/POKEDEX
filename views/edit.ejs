@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
     <style>
           body{
     background-image: url(https://i.imgur.com/RV3GYfk.jpg);
@@ -16,47 +18,60 @@
     background-attachment: fixed;
     background-size: 100% 100%;
     }
+
+    .lowerB {
+        /* text-align: center; */
+        border-radius: 50%;
+        border-style: solid;
+        border-color: aquamarine;
+        border-width: 8px;
+        position:absolute;
+        left: 371px;
+        bottom: 110px;
+        width: 12%;  
+        height: 21%;   
+        
+    }
     </style>
-    <title>Edit Page</title>
     
 </head>
 <body>
     <form method="POST" action="/pokemon/<%= pokemon.id %>/?_method=PUT">
         <label>
-            NAME:<input
+           <p> NAME: <input
               type="text"
               name="name"
               value="<%= pokemon.name %> "
               placeholder="enter new pokemon name"
-            />
+            /> </p>
           </label>
           <label>
-            HP:<input
+          <p> HP: <input
               type="text"
               name="hp"
               value="<%= pokemon.stats.hp %> "
               placeholder="Enter New HP"
-            />
+            /> </p>
           </label>
           <label>
-            ATTACK:<input
+            <p>ATTACK: <input
               type="text"
               name="attack"
               value="<%= pokemon.stats.attack %> "
               placeholder="Enter New Attack"
-            />
+            /> </p>
           </label>
           <label>
-            DEFENSE:<input
+            <p>DEFENSE: <input
               type="text"
               name="defense"
               value="<%= pokemon.stats.defense %> "
               placeholder="Enter New Defense"
             />
           </label>
-          <input type="submit" value="Update <%= pokemon.name %>" />
-          <a href="/pokemon/"><button>Back</button></a>
+          <p><input type="submit" value="Update <%= pokemon.name %>" />
+          <a href="/pokemon/:id"><button>Back</button></a></p>
     </form>
-    
+    <img class="lowerB" src="<%= pokemon.img %>" width="100" height="100"/> 
 </body>
 </html>
